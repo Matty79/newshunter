@@ -523,5 +523,18 @@
 
 <script src="//origami-build.ft.com/v2/bundles/js?modules=o-header%406.14.1%3A%2Fdemos%2Fsrc%2Fmain.js"></script>
 
+<script>
+var xhr = new XMLHttpRequest();
+// var search = document.getElementById("o-header-drawer-search-term")
+var query = JSON.stringify({ queryString: "banks" });
+var limit = JSON.stringify({ resultContext: {
+		 "aspects" :[  "title","lifecycle","location","summary","editorial" ],
+	 "maxResults" : "10"
+ }});
+xhr.open('POST', 'http://api.ft.com/content/search/v1?apiKey=5sqrnt5wuaypkpcssywxzgx8', true);
+xhr.setRequestHeader('Content-Type', 'application/json');
+xhr.send(query + ',' + limit);
+</script>
+
 </body>
 </html>
