@@ -3,15 +3,16 @@
   "devDependencies": {
     "origami-build-tools": "latest",
     "gulp": "latest"
-
-  }
-}
-"engines": {
-    "node": "7.7.4"
-  }
-  {
+  },
+  "engines": {
+    "node": "7.7.4",
     "npm": "4.5.0"
+  },
+  "scripts": {
+    "start": "node server.js"
+  },
+  "dependencies": {
+    "bower": "^1.8.0",
+    "gulp": "^3.9.1"
   }
-"scripts": {
-  "start": "node server.js"
 }
