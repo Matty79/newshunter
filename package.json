@@ -3,5 +3,9 @@
   "devDependencies": {
     "origami-build-tools": "latest",
     "gulp": "latest"
+
   }
+}
+"scripts": {
+  "start": "node server.js"
 }
